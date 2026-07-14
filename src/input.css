@@ -9,9 +9,12 @@ body{
         @apply w-full flex flex-wrap
     }
     .question{
-        @apply bg-white dark:bg-[#192335]  rounded-3xl shadow-xl px-5 py-5 w-full flex flex-col justify-center gap-5   *:nth-[1]:flex *:nth-[1]:items-center *:nth-[1]:justify-between  *:nth-[1]:text-[17px] dark:*:nth-[1]:text-white 
-         *:nth-[1]:font-medium  *:nth-[1]:*:nth-[2]:text-white *:nth-[1]:*:nth-[2]:bg-[#845ef5] *:nth-[1]:*:nth-[2]:p-3 *:nth-[1]:*:nth-[2]:rounded-full *:nth-[1]:*:nth-[2]:w-10 *:nth-[1]:*:nth-[2]:text-[25px] *:nth-[1]:*:nth-[2]:h-10 *:nth-[1]:*:nth-[2]:flex *:nth-[1]:*:nth-[2]:justify-center *:nth-[1]:*:nth-[2]:items-center *:nth-[2]:text-gray-600 *:nth-[2]:text-lg *:nth-[2]:hidden dark:*:nth-[1]:*:nth-[2]:bg-[#6695f8]
-    }    
+        @apply bg-white dark:bg-[#192335]  rounded-3xl shadow-xl *:nth-[1]:items-center  w-full flex flex-col  justify-center  gap-5 px-5 py-4 *:nth-[1]:flex *:nth-[1]:h-full *:nth-[1]:w-full *:nth-[1]:pt-3.5  *:nth-[1]:justify-between  *:nth-[1]:text-[17px] dark:*:nth-[1]:text-white 
+         *:nth-[1]:font-medium  *:nth-[1]:*:nth-[2]:text-white *:nth-[1]:*:nth-[2]:bg-[#845ef5] *:nth-[1]:*:nth-[2]:p-3 *:nth-[1]:*:nth-[2]:rounded-full *:nth-[1]:*:nth-[2]:w-10 *:nth-[1]:*:nth-[2]:text-[25px] *:nth-[1]:*:nth-[2]:h-10 *:nth-[1]:*:nth-[2]:flex *:nth-[1]:*:nth-[2]:justify-center *:nth-[1]:*:nth-[2]:items-center *:nth-[2]:text-gray-600 *:nth-[2]:text-lg  dark:*:nth-[1]:*:nth-[2]:bg-[#6695f8] *:nth-[2]:*:nth-[1]:pb-3 *:nth-[1]:*:nth-[2]:duration-300
+    } 
+    .ask{
+        @apply cursor-pointer *:nth-[2]:cursor-pointer
+    }   
 }
 .bg-main {
     background:
