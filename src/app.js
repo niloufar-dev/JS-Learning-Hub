@@ -39,3 +39,45 @@ question.addEventListener('click',(e)=>{
     }
     
 })
+
+////////////////////////////////////tab///////////////////////////////////////
+
+
+const tab =document.querySelector('.tab')
+const contant=document.querySelectorAll('.contant')
+const bttab = document.querySelectorAll('.bttab')
+
+
+tab.addEventListener('click',(e)=>{
+
+    const target =e.target.closest('button')
+    const data= target.dataset.id
+    console.log(data);
+    bttab.forEach((val)=>{
+        val.classList.remove('active')
+    })
+    contant.forEach((item)=>{
+        if(data== item.id){
+            item.classList.remove('hidden')
+            target.classList.add('active')
+            setTimeout(() => {
+            item.classList.remove("opacity-0", "translate-y-5");
+            item.classList.add("opacity-100", "translate-y-0");
+            }, 10);
+            
+            
+            
+
+        }else{
+            item.classList.add('hidden')
+            item.classList.remove("opacity-100", "translate-y-0");
+            item.classList.add("opacity-0", "translate-y-5");
+            
+        }
+
+        
+        
+    })
+    
+    
+})
