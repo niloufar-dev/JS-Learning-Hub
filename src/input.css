@@ -1,1 +1,33 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+body{
+    font-family: "Space Grotesk", sans-serif;
+}
+@layer utilities{
+     .row{
+        @apply w-full flex flex-wrap
+    }
+}
+.bg-main {
+    background:
+        radial-gradient(circle at top left,
+            rgba(99,102,241,.35),
+            transparent 35%),
+
+        radial-gradient(circle at bottom right,
+            rgba(168,85,247,.30),
+            transparent 40%),
+
+        #eef2ff;
+}
+.darkbg{
+     background:
+        radial-gradient(circle at top left,
+            rgba(99,102,241,.35),
+            transparent 35%),
+        radial-gradient(circle at bottom right,
+            rgba(168,85,247,.30),
+            transparent 40%),
+        #0f172a;
+}

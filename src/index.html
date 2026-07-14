@@ -7,8 +7,66 @@
     <link rel="stylesheet" href="./output.css">
     <link rel="stylesheet" href="./input.css">
 </head>
-<body>
-    
+<body class="min-h-screen bg-[#eef2ff] dark:bg-[#0f172a] relative">
+
+    <div class="fixed w-full h-full bg-main dark:darkbg -z-10">
+
+    </div>
+
+    <!-- //////////////////////////////// -->
+     <main>
+        <div class="row  justify-between px-14  lg:px-40 py-8">
+            <div class=" flex items-center">
+                <span class="text-4xl text-[#1a2237] font-extrabold dark:text-white">JS</span><span class="text-4xl font-extrabold text-[#6366f1]">HUB</span>
+            </div> 
+            <div class=" rounded-full bg-white shadow dark:bg-[#192335]">
+                <span class="text-2xl  
+               flex items-center justify-center
+               w-full h-full p-3 rounded-full flex
+               transition-all duration-300
+               hover:scale-110 hover:rotate-12
+               hover:bg-indigo-500 hover:text-white
+               active:scale-95 hover:shadow-2xl hover:shadow-blue-600">🌙</span>
+            </div>
+        </div>
+
+        <!-- //////////////////////////////////////// -->
+
+        <div class="row flex-col justify-center items-center p-8">
+            <p class="text-4xl md:text-6xl font-bold text-[#1a2237] text-center dark:text-white">Learn JavaScript <span class="text-[#6366f1] dark:bg-gradient-to-r
+         from-[#47B4F5]
+         to-[#7C5CFA] px-2
+         font-extrabold dark:bg-clip-text dark:text-transparent">Interactively</span></p>
+         <p class="text-[#7e828c] text-[14px] mt-8 text-center md:text-[18px] dark:text-[#cbd5e1]">Practice JavaScript concepts through beautiful examples.</p>
+        </div>
+
+        <!-- ////////////////////////////// -->
+         <div class="row justify-center">
+            <div class="flex flex-col md:flex-row gap-4.5 *:cursor-pointer pt-4">
+                <button class="bg-[#845ef5] text-white px-12 py-3 rounded-4xl shadow-2xl shadow-[#9048fb65] text-lg font-medium hover:-translate-y-1.5 duration-500 hover:shadow-2xl dark:bg-gradient-to-r
+         from-[#47B4F5]
+         to-[#7C5CFA]"> Explore Topics</button>
+                <button class="bg-white shadow-2xl font-medium px-12 py-3 rounded-4xl shadow-[#9048fb65] hover:-translate-y-1.5 duration-500 hover:shadow-2xl dark:bg-[#192335] dark:text-white">View Source</button>
+            </div>
+         </div>
+
+         <!-- //////////////////////////////////////////////////////// -->
+          <div class="row mt-8">
+            <div class="flex w-full px-6 *:w-full flex-wrap justify-center items-center gap-3 *:py-3 *:rounded-3xl *:hover:-translate-y-1 *:hover:shadow-[0_0_20px_rgba(251,251,251,0.2)] *:duration-300 *:md:w-[120px] xl:justify-start xl:px-72"> 
+                <button class="bg-[#845ef5] text-white shadow dark:bg-gradient-to-r
+         from-[#47B4F5]
+         to-[#7C5CFA]">Basic</button> 
+                <button class="bg-white shadow dark:bg-[#192335] dark:text-white">DOM</button>
+                <button class="bg-white shadow dark:bg-[#192335] dark:text-white">ES6</button>
+                <button class="bg-white shadow dark:bg-[#192335] dark:text-white">Async</button>
+                <button class="bg-white shadow dark:bg-[#192335] dark:text-white">Advanced</button>
+            </div>
+          </div>
+
+          <!-- //////////////////////////////////////// -->
+           
+     </main>
+
     <script src="./app.js"></script>
 </body>
 </html>
