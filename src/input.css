@@ -16,11 +16,7 @@ body{
     .ask{
         @apply cursor-pointer *:nth-[2]:cursor-pointer
     } 
-    .active{
-        @apply{
-            bg-[#845ef5] text-white
-        }
-    }  
+    
 }
 .bg-main {
     background:
